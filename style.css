@@ -1,0 +1,170 @@
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.heading
+{
+   text-shadow: 5px 3px;
+   font-size:100px;
+   color: yellow;
+}
+.topnav {
+    overflow: hidden;
+    background-color:black;
+}
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.topnav #a
+{
+    border-radius: 50%;
+}
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.a1:hover {
+    animation: shake 2s;
+    animation-iteration-count:2s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.row2 {
+    display: flex;
+    position:relative;
+}
+.column2 {
+    flex: 25%;
+    padding: 0px;
+}
+.row2 .column2 img:hover {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.text-block2 {
+    position:absolute;
+    bottom:300px;
+    left:100px;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+#songbutton {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+#songbutton:hover {
+    background-color: #3e8e41
+  }
+
+  #songbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #b1 {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 12px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: red;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    #b1:hover {background-color: #3e8e41}
+
+    #b1:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+input[type=email] {
+width: 20%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid red;
+border-radius: 4px;
+}
+.fa {
+  padding: 5px;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
