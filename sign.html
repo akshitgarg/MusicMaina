@@ -1,0 +1,92 @@
+<html>
+<head>
+  <style>
+
+  .but1
+  {
+    background-color: red;
+  padding: 14px 20px;
+margin:30px;
+  border: none;
+
+  width: 30%;
+  opacity: 0.9;
+}
+   .but2
+  {
+    background-color: green;
+     padding: 14px 20px;
+margin:30px;
+  border: none;
+
+  width: 30%;
+  opacity: 0.9;
+ }
+ .box
+ {
+   height: 3%;
+   width: 15%;
+ }
+ .container
+ {
+  padding: 115px;
+/*background-image: url("style_abstract_dragon_74494_1280x720.jpg");*/
+background-image:url("ian-parker-546266-unsplash.jpg");
+  text-align: center;
+  color: white;
+   }
+ </style>
+</head>
+<body class="body1">
+<form action="main.html" onsubmit="return myalert()">
+  <div class="container">
+    <h1 >Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <p> Email Id</p>
+    <input  class="box" type="text" id="3" placeholder="Enter Email" name="email" required>
+
+    <br>
+    <p>Password</p>
+    <input class="box" type="password" id="4"  placeholder="Enter Password" name="psw" required>
+ <br>
+    <p> Repeat Password</p>
+    
+    <input class="box" type="password"  id="4" placeholder="Repeat Password" name="psw-repeat" required >
+    <br>
+    
+     <br> <input type="checkbox" name="remember"> Remember Me..!
+    
+    <br>
+    <div class="clearfix">
+      <br>
+     <a href="index.html" ><button class="but1" type="button" class="cancelbtn">Cancel</button></a>
+      <button class="but2"  onclick="myalert()" type="submit" class="signupbtn">Sign Up</button>
+    </div>
+    </div>
+</form>
+<script>
+  function myalert()
+  {
+
+   
+var email = document.getElementById('3').value;
+var password = document.getElementById('4').value;
+if(password=='' || email=='')
+{
+alert('All fields are required');
+return false;
+}
+else if(password.length<4)
+{
+alert('password must be more than 4 char');
+return false;
+}
+else
+{
+return true;
+    //window.alert("you submit your signup form");
+  }
+  </script>
+</body>
+</html>
